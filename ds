@@ -1,0 +1,13 @@
+def leap_year(year):
+    if (year%4==0):
+        if (year%100==0):#in case it is a century which will end by 00 like 1900 then we shuld / by 400 
+            if (year%400==0):
+                print (" It is a leap year")
+            else:
+                print (" It is NOT a leap year")
+        else:
+            print ("It is Not  a leap year")
+    else:
+        print("It is Not a leap year")
+
+leap_year(1900)
